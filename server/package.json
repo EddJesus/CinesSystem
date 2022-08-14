@@ -1,0 +1,19 @@
+{
+  "name": "verotmark",
+  "version": "1.0.0",
+  "description": "Sistema de cinemas desenvolvido para teste técnico Verot",
+  "main": "main.ts",
+  "author": "Eduardo de Jesus Santos",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node-dev main.ts",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.3",
+    "@types/uuid": "^8.3.4",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.7.4"
+  }
+}
