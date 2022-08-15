@@ -4,9 +4,8 @@ import { MovieRepository } from "../../core/repositories/movie.repository";
 export class MovieRepositoryInMemory implements MovieRepository {
     private movies: Movie[] = [];
     async create(movie: Movie): Promise<Movie> {
-        const createdMovie = new Movie(movie.props);
-        this.movies.push(createdMovie);
-        return createdMovie;
+        this.movies.push(movie);
+        return movie;
     }
 
     async getById(id: string): Promise<Movie> {
