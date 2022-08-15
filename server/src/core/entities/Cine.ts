@@ -1,4 +1,4 @@
-import { Entity } from "../../core/domain/Entity";
+import { Entity } from "./Entity";
 
 type CineProps = {
   name: string
