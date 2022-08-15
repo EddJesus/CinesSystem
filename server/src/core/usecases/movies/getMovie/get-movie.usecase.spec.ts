@@ -1,5 +1,6 @@
 import { MovieRepositoryInMemory } from "../../../../infra/repositories/movie.repository-in-memory";
 import { Movie } from "../../../entities/Movie";
+import { makeMockMovie } from "../__mocks__/Movie";
 import { GetMovieUseCase } from "./get-movie.usecase";
 
 describe('getMovieUseCase', () => {
@@ -11,14 +12,7 @@ describe('getMovieUseCase', () => {
   })
 
   it('should get a movie', async () => {
-    const movie: Movie = new Movie({
-      name: 'Movie 1',
-      gender: 'horror',
-      durationInMinutes: 120,
-      synopsis: 'Movie Synopsis',
-      releaseDate: new Date(),
-      classification: 18,
-    })
+    const movie: Movie = makeMockMovie()
     const movieRepositoryInMemory = new MovieRepositoryInMemory();
     await movieRepositoryInMemory.create(movie)
     const sut = new GetMovieUseCase(movieRepositoryInMemory)
