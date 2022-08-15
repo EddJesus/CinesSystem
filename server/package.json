@@ -8,7 +8,7 @@
   "scripts": {
     "start": "ts-node-dev main.ts",
     "build": "tsc",
-    "test": "tsc && jest ./dist"
+    "test": "tsc && jest --verbose ./dist"
   },
   "devDependencies": {
     "@swc/core": "^1.2.231",
@@ -20,5 +20,8 @@
     "ts-node": "^10.9.1",
     "ts-node-dev": "^2.0.0",
     "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^7.4.0"
   }
 }
