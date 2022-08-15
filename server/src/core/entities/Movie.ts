@@ -1,12 +1,12 @@
 import { Entity } from "./Entity";
 
 type MovieProps = {
-    title: string
+    name: string
     gender: string
-    duration: string
-    rating: string
-    description: string
-    release: string
+    durationInMinutes: number // minutes
+    classification: number
+    synopsis: string
+    releaseDate: Date
 }
 
 export class Movie extends Entity<MovieProps> {
