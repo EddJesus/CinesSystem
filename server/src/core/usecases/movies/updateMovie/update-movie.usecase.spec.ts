@@ -18,8 +18,8 @@ describe('updateMovieUseCase', () => {
     const sut = new UpdateMovieUseCase(movieRepositoryInMemory)
 
     const newName = 'New Name'
-    mockMovie.name = newName
-    const updatedMovie = await sut.execute(mockMovie)
+
+    const updatedMovie = await sut.execute({id: mockMovie.id, name: newName})
     const movie = await movieRepositoryInMemory.getById(updatedMovie.id)
 
     expect(movie.props).toHaveProperty('name', newName);
@@ -31,6 +31,8 @@ describe('updateMovieUseCase', () => {
 
     const sut = new UpdateMovieUseCase(movieRepositoryInMemory)
 
-    await expect(sut.execute(mockMovie)).rejects.toThrowError(`Movie with id ${mockMovie.id} not found`)
+    const newName = 'New Name'
+
+    await expect(sut.execute({id: mockMovie.id, name: newName})).rejects.toThrowError(`Movie with id ${mockMovie.id} not found`)
   })
 })
