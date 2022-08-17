@@ -5,7 +5,11 @@ export class ListMoviesUseCase {
     constructor(private movieRepository: MovieRepository) { }
 
     async execute(): Promise<Movie[]> {
-      const movies = await this.movieRepository.list();
-      return movies
+        try {
+          const movies = await this.movieRepository.list();
+          return movies
+        } catch (error) {
+          throw error
+        }
     }
 }
