@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
-    "target": "es2016",
-    "module": "ESNext",
-    "moduleResolution": "node",
+    "target": "es2021",
+    "module": "commonjs",
     "allowJs": true,
+    "esModuleInterop": true,
+    "strictPropertyInitialization": false,
     // "rootDir": "./",
     // "baseUrl": "./",
     // "paths": {},
@@ -14,11 +15,10 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "baseUrl": "src",
-    "outDir": "./dist",
-    "paths": {
-      "@/*": ["*"]
-    },
+    "outDir": "./dist"
   },
   "include": [
     "src/**/*.ts",
