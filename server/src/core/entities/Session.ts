@@ -1,4 +1,4 @@
-import { Entity } from "../../core/domain/Entity";
+import { Entity } from "./Entity";
 import { Cine } from "./Cine";
 import { Movie } from "./Movie";
 

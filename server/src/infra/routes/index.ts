@@ -1,0 +1,1 @@
+export * as movieRouter from './movies.router'
