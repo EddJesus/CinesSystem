@@ -202,7 +202,7 @@ export class MovieRepositoryPostgres implements MovieRepository {
       
   }
 
-  async delete(id: string): Promise<void> {
+  async delete(id: string): Promise<any> {
     const connection = await this.postgresClient.connection();
 
     try {
