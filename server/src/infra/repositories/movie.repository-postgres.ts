@@ -202,13 +202,19 @@ export class MovieRepositoryPostgres implements MovieRepository {
       
   }
 
-  async delete(id: string): Promise<any> {
+  async delete(id: string): Promise<boolean> {
     const connection = await this.postgresClient.connection();
 
     try {
       const sql = `DELETE FROM filme WHERE id = $1`;
 
-      return await this.postgresClient.query(connection, sql, [id]);
+      const { results } = await this.postgresClient.query(connection, sql, [id]);
+
+      if(results.rowCount === 0) {
+        throw new Error('Movie not found');
+      }
+
+      return true
     } catch (error) {
       throw error;
     } finally {

@@ -5,12 +5,7 @@ export class DeleteMovieUseCase {
 
     async execute(movieId: string): Promise<void> {
         try {
-            const deletedMovie = await this.movieRepository.delete(movieId);
-            console.log(deletedMovie.results.rows);
-            if(deletedMovie.results.rows.length === 0) {
-                throw new Error('Movie not found')
-            }
-            return deletedMovie
+            await this.movieRepository.delete(movieId);
         } catch (error) {
             throw error
         }
