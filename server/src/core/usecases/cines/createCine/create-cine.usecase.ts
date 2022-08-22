@@ -1,7 +1,7 @@
 import { Cine } from "core/entities/Cine";
 import { CineRepository } from "core/repositories/cine.repository";
 
-export class CreateCine {
+export class CreateCineUseCase {
     constructor(private cineRepository: CineRepository) { }
 
     async execute(cine: Cine): Promise<Cine> {
