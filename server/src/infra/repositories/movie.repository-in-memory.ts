@@ -29,11 +29,12 @@ export class MovieRepositoryInMemory implements MovieRepository {
         return movie;
     }
     
-    async delete(id: string): Promise<void> {
+    async delete(id: string): Promise<boolean> {
         const index = this.movies.findIndex(movie => movie.id === id);
         if (index === -1) {
             throw new Error(`Movie with id ${id} not found`);
         }
         this.movies.splice(index, 1);
+        return true;
     }
 }
