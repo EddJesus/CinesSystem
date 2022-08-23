@@ -1,9 +1,9 @@
-import { SessionRepository } from '../../core/repositories/session.repository';
-import { CineRepository } from '../../core/repositories/cine.repository';
-import { MovieRepository } from '../../core/repositories/movie.repository';
-import { PostgresClient } from '../clients/postgres-client';
-import { Session } from '../../core/entities/Session';
-import { SessaoDTO, sessaoProps } from './dtos/sessao.dto';
+import { SessionRepository } from '../../../core/repositories/session.repository';
+import { CineRepository } from '../../../core/repositories/cine.repository';
+import { MovieRepository } from '../../../core/repositories/movie.repository';
+import { PostgresClient } from '../../clients/postgres-client';
+import { Session } from '../../../core/entities/Session';
+import { SessaoDTO, sessaoProps } from '../dtos/sessao.dto';
 
 export class SessionRepositoryPostgres implements SessionRepository {
   private postgresClient: PostgresClient;

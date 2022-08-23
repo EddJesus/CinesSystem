@@ -1,7 +1,7 @@
-import { CineRepository } from '../../core/repositories/cine.repository';
-import { PostgresClient } from '../clients/postgres-client';
-import { Cine } from '../../core/entities/Cine';
-import { CinemaDTO, cinemaProps } from './dtos/cinema.dto';
+import { CineRepository } from '../../../core/repositories/cine.repository';
+import { PostgresClient } from '../../clients/postgres-client';
+import { Cine } from '../../../core/entities/Cine';
+import { CinemaDTO, cinemaProps } from '../dtos/cinema.dto';
 
 export class CineRepositoryPostgres implements CineRepository {
   private postgresClient: PostgresClient;

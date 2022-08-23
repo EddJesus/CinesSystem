@@ -1,5 +1,5 @@
 import { MovieRepositoryPostgres } from "./movie.repository-postgres";
-import { makeMockMovie } from '../../core/usecases/movies/__mocks__/Movie';
+import { makeMockMovie } from '../../../core/usecases/movies/__mocks__/Movie';
 
 describe('MovieRepositoryPostgres', () => {
   let movieRepository: MovieRepositoryPostgres;

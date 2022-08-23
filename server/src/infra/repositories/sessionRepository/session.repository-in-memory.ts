@@ -1,5 +1,5 @@
-import { Session } from "../../core/entities/Session";
-import { SessionRepository } from "../../core/repositories/session.repository";
+import { Session } from "../../../core/entities/Session";
+import { SessionRepository } from "../../../core/repositories/session.repository";
 
 export class SessionRepositoryInMemory implements SessionRepository {
     private sessions: Session[] = [];

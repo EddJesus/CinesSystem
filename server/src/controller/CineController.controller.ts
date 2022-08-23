@@ -1,5 +1,5 @@
 import { CreateCineUseCase, DeleteCineUseCase, GetCineUseCase, UpdateCineUseCase, ListCinesUseCase } from '../core/usecases/cines'
-import { CineRepositoryPostgres } from '../infra/repositories/cine.repository-postgres';
+import { CineRepositoryPostgres } from '../infra/repositories/cineRepository/cine.repository-postgres';
 import { Cine } from '../core/entities/Cine';
 import { CreateCineDTO, UpdateCineDTO } from 'shared/dtos/cines';
 

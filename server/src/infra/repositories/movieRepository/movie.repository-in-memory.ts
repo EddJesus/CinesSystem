@@ -1,5 +1,5 @@
-import { Movie } from "../../core/entities/Movie";
-import { MovieRepository } from "../../core/repositories/movie.repository";
+import { Movie } from "../../../core/entities/Movie";
+import { MovieRepository } from "../../../core/repositories/movie.repository";
 
 export class MovieRepositoryInMemory implements MovieRepository {
     private movies: Movie[] = [];

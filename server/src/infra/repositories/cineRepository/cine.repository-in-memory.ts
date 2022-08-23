@@ -1,5 +1,5 @@
-import { Cine } from "../../core/entities/Cine";
-import { CineRepository } from "../../core/repositories/cine.repository";
+import { Cine } from "../../../core/entities/Cine";
+import { CineRepository } from "../../../core/repositories/cine.repository";
 
 export class CineRepositoryInMemory implements CineRepository {
     private cines: Cine[] = [];

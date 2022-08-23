@@ -1,7 +1,7 @@
 import { CreateSessionUseCase, DeleteSessionUseCase, GetSessionUseCase, UpdateSessionUseCase, ListSessionsUseCase } from '../core/usecases/sessions'
-import { SessionRepositoryPostgres } from '../infra/repositories/session.repository-postgres';
-import { CineRepositoryPostgres } from '../infra/repositories/cine.repository-postgres';
-import { MovieRepositoryPostgres } from '../infra/repositories/movie.repository-postgres';
+import { SessionRepositoryPostgres } from '../infra/repositories/sessionRepository/session.repository-postgres';
+import { CineRepositoryPostgres } from '../infra/repositories/cineRepository/cine.repository-postgres';
+import { MovieRepositoryPostgres } from '../infra/repositories/movieRepository/movie.repository-postgres';
 import { Session } from '../core/entities/Session';
 import { CreateSessionDTO, UpdateSessionDTO } from 'shared/dtos/session';
 

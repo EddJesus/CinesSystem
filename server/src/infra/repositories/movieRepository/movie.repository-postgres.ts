@@ -1,7 +1,7 @@
-import { MovieRepository } from '../../core/repositories/movie.repository';
-import { PostgresClient } from '../clients/postgres-client';
-import { Movie } from '../../core/entities/Movie';
-import { FilmeDTO, filmeProps } from './dtos/filme.dto';
+import { MovieRepository } from '../../../core/repositories/movie.repository';
+import { PostgresClient } from '../../clients/postgres-client';
+import { Movie } from '../../../core/entities/Movie';
+import { FilmeDTO, filmeProps } from '../dtos/filme.dto';
 
 export class MovieRepositoryPostgres implements MovieRepository {
   private postgresClient: PostgresClient;

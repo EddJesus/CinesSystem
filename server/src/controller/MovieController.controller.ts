@@ -1,5 +1,5 @@
 import { CreateMovieUseCase, DeleteMovieUseCase, GetMovieUseCase, UpdateMovieUseCase } from '../core/usecases/movies'
-import { MovieRepositoryPostgres } from '../infra/repositories/movie.repository-postgres';
+import { MovieRepositoryPostgres } from '../infra/repositories/movieRepository/movie.repository-postgres';
 import { ListMoviesUseCase } from '../core/usecases/movies/listMovies/list-movies.usecase';
 import { Movie } from '../core/entities/Movie';
 import { CreateMovieDTO, UpdateMovieDTO } from 'shared/dtos/movies';

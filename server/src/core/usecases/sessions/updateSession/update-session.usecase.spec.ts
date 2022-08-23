@@ -1,5 +1,5 @@
 import { Session } from "../../../../core/entities/Session";
-import { SessionRepositoryInMemory } from "../../../../infra/repositories/session.repository-in-memory";
+import { SessionRepositoryInMemory } from "../../../../infra/repositories/sessionRepository/session.repository-in-memory";
 import { makeMockSession } from "../__mocks__/Session";
 import { UpdateSessionUseCase } from "./update-session.usecase";
 

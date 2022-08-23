@@ -1,4 +1,4 @@
-import { SessionRepositoryInMemory } from '../../../../infra/repositories/session.repository-in-memory';
+import { SessionRepositoryInMemory } from '../../../../infra/repositories/sessionRepository/session.repository-in-memory';
 import { CreateSessionUseCase } from './create-session.usecase';
 import { makeMockSession } from '../__mocks__/Session';
 

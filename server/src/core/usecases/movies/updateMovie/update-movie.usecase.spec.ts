@@ -1,5 +1,5 @@
 import { Movie } from "../../../../core/entities/Movie";
-import { MovieRepositoryInMemory } from "../../../../infra/repositories/movie.repository-in-memory";
+import { MovieRepositoryInMemory } from "../../../../infra/repositories/movieRepository/movie.repository-in-memory";
 import { makeMockMovie } from "../__mocks__/Movie";
 import { UpdateMovieUseCase } from "./update-movie.usecase";
 

@@ -1,5 +1,5 @@
 import { Cine } from "../../../../core/entities/Cine";
-import { CineRepositoryInMemory } from "../../../../infra/repositories/cine.repository-in-memory";
+import { CineRepositoryInMemory } from "../../../../infra/repositories/cineRepository/cine.repository-in-memory";
 import { makeMockCine } from "../__mocks__/Cine";
 import { UpdateCineUseCase } from "./update-cine.usecase";
 

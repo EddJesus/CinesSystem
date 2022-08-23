@@ -1,4 +1,4 @@
-import { CineRepositoryInMemory } from '../../../../infra/repositories/cine.repository-in-memory';
+import { CineRepositoryInMemory } from '../../../../infra/repositories/cineRepository/cine.repository-in-memory';
 import { CreateCineUseCase } from './create-cine.usecase';
 import { makeMockCine } from '../__mocks__/Cine';
 

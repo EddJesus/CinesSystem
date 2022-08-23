@@ -1,4 +1,4 @@
-import { MovieRepositoryInMemory } from '../../../../infra/repositories/movie.repository-in-memory';
+import { MovieRepositoryInMemory } from '../../../../infra/repositories/movieRepository/movie.repository-in-memory';
 import { makeMockMovie } from "../__mocks__/Movie";
 import { DeleteMovieUseCase } from "./delete-movie.usecase";
 import { Movie } from '../../../entities/Movie';
